@@ -45,6 +45,10 @@ def edit_task(request, task_id):
 
     return redirect('index')
 
+def empty_tasks(request):
+    Task.objects.all().delete()  # Deletes all tasks
+    return redirect('index')
+
 
 
 
