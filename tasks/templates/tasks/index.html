@@ -68,7 +68,7 @@
                         {{ task.description }}
                     </td>
                     <td class="{% if task.completed %}completed{% endif %}">
-                        {{ task.created_at }} UTC</td>
+                        {{ task.created_at }} EST</td>
                     <td class="actions">
                         <form action="{% url 'delete_task' task.id %}" method="POST">
                             {% csrf_token %}
